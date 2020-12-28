@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluuter_basic/cupertino_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,10 +12,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        // brightness:Brightness.dark,
         primarySwatch: Colors.blue,
+        primaryColor: Color(0xFFf79999),
+        accentColor: Color(0xFFf79999),
+        // canvasColor: Color(0xFFffffff),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HelloPage('Hello World'),
+      home: CupertinoPage(),
+      // home: HelloPage('Hello World'),
     );
   }
 }

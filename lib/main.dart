@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
         // canvasColor: Color(0xFFffffff),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: CupertinoPage(),
-      // home: HelloPage('Hello World'),
+      // home: CupertinoPage(),
+      home: HelloPage('Hello World'),
     );
   }
 }
@@ -52,6 +52,9 @@ class _HelloPageState extends State<HelloPage> {
           children: <Widget>[
             Text(_message, style: TextStyle(fontSize: 30)),
             Text('$_conter', style: TextStyle(fontSize: 30)),
+            RaisedButton(child: Text('Go'), onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => CupertinoPage()));
+            })
           ],
         )));
   }

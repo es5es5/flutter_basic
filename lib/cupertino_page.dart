@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:fluuter_basic/main.dart';
 
 class CupertinoPage extends StatefulWidget {
   @override
@@ -25,7 +26,10 @@ class _CupertinoPageState extends State<CupertinoPage> {
                 setState(() {
                   _switch = value;
                 });
-              })
+              }),
+          RaisedButton(child: Text('Go'), onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => HelloPage("Return")));
+          }),
         ],
       ),
     );

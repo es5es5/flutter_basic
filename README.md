@@ -1,4 +1,4 @@
-# fluuter_basic
+# flutter_basic
 
 A new Flutter application.
 

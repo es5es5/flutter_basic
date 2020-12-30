@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:fluuter_basic/main.dart';
+import 'package:flutter_basic/main.dart';
 
 class CupertinoPage extends StatefulWidget {
   @override

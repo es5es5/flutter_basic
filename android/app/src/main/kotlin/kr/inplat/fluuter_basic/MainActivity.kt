@@ -1,4 +1,4 @@
-package kr.inplat.fluuter_basic
+package kr.inplat.flutter_basic
 
 import io.flutter.embedding.android.FlutterActivity
 
